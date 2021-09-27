@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #eef0f8;
+    background-image: url('../assets/banner.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 350px;
+    font-family: 'Poppins', sans-serif;
+    font-size: .935rem;
+}
+
+/* Botões */
+button {
+    font-size: .85rem !important;
+}
+
+.btn-primary {
+    background-color: #005ca9;
+    border-color: #005ca9;
+}
+
+.container.mt-4 div div.buttons button,
+.container.mt-4 div div.buttons a {
+    font-size: .85rem;
+}
+
+table td.options a,
+table td.options div.btn-group button,
+div.row .col input {
+    font-size: .85rem;
+}
+
+/* Badges */
+table tbody tr td span.bg-primary {
+    background-color: #005ca9 !important;
+}
+
+aside a {
+    color: #3f4254 !important;
+    text-decoration: none;
+
+    &:hover {
+        color: #0d6efd !important;
+    }
+}
+.nav-item .active,
+a:active {
+    color: white !important;
+    text-decoration: none !important;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+/* Footer */
+footer {
+
+    div.container {
+
+        a.text-decoration-none {
+            color: black;
+            transition: .85s;
+
+            &:hover {
+                color: #004d7c;
+            }
+        }
+    }
+}
