@@ -98,6 +98,28 @@ div.card.box-app {
     td {
         vertical-align: middle;
     }
+
+    /* Wizard */
+    .wizard .wizard-item {
+        color: #b5b5c3;
+    }
+    .wizard .wizard-item::after {
+        content: "";
+        display: block;
+        background-color: #e0e0e0;
+        height: 5px;
+        width: 100%;
+    }
+    .wizard .wizard-item.active {
+        color: #2881b9;
+    }
+    .wizard .wizard-item.active::after {
+        background-color: #2881b9;
+    }
+    .wizard .wizard-item>span {
+        font-size: 1.5rem;
+        margin-right: .2rem;
+    }
 }
 
 .collapse-partes {

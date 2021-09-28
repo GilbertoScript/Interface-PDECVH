@@ -9,6 +9,7 @@ div.card.box-app {
   border: none;
   border-radius: 3px;
   padding: 0;
+  /* Wizard */
 }
 div.card.box-app > div.card-header {
   background-color: transparent;
@@ -83,6 +84,26 @@ div.card.box-app div.tab-content {
 }
 div.card.box-app td {
   vertical-align: middle;
+}
+div.card.box-app .wizard .wizard-item {
+  color: #b5b5c3;
+}
+div.card.box-app .wizard .wizard-item::after {
+  content: "";
+  display: block;
+  background-color: #e0e0e0;
+  height: 5px;
+  width: 100%;
+}
+div.card.box-app .wizard .wizard-item.active {
+  color: #2881b9;
+}
+div.card.box-app .wizard .wizard-item.active::after {
+  background-color: #2881b9;
+}
+div.card.box-app .wizard .wizard-item > span {
+  font-size: 1.5rem;
+  margin-right: 0.2rem;
 }
 
 .collapse-partes button.btn-block {

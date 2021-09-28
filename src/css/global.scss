@@ -6,12 +6,12 @@
 
 body {
 	background: #eef0f8;
-    background-image: url('../assets/banner.png');
+    background-image: url('../assets/cliente-logo.png');
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: top center;
     background-size: 100% 350px;
     font-family: 'Poppins', sans-serif;
-    font-size: .935rem;
+    font-size: .835rem;
 }
 
 /* Botões */
@@ -72,4 +72,14 @@ footer {
             }
         }
     }
+}
+
+.accordion-mod {
+    border: 0;
+}
+
+.accordion-button {
+    color: #0c63e4;
+    background-color: #fff !important;
+    border-bottom: 1px solid #0c63e4;
 }
