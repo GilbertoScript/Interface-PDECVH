@@ -13,122 +13,20 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/css/header.css">
-    <link rel="stylesheet" href="./src/css/global.css">
-	<link rel="stylesheet" href="./src/css/content.css">
-
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-
 	<title>PDECVH - Sistema</title>
 </head>
-<body>
+<body class="bg-light">
 	
-<!-- Header -->
-<header>
+<main class="mt-5">
+	<h2 class="text-center pt-5">Escolha como entrar</h2>
 
-	<!-- Container -->
-	<div class="container">
-
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand" href="index.html">
-                
-                <img src="./src/assets/icon.png" class="img-fluid mb-2" width="32" alt="">
-				<h3 class="d-inline">PDECVH</h3>
-			</a>
-
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-
-			<div class="collapse navbar-collapse justify-content-between" id="navbar-header">
-				<ul class="navbar-nav me-auto">
-
-					<!-- Início -->
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							Início
-						</a>
-					</li>
-				</ul>
-
-				<!-- Dropdown Minha conta -->
-				<div class="my-2 my-lg-0">
-					<div class="user dropdown">
-						<button class="btn shadow-none d-flex align-items-center dropdown-toggle" type="button" id="user-menu-btn" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-
-						<span class="text-white m-1 fs-6">
-							<i class="bi bi-person-circle"></i>
-						</span>
-						<span class="text-white fw-bold me-2 fs-6">Usuário teste</span>
-						<span>&nbsp;&nbsp;&nbsp;</span>
-						<span class="initial text-white fs-6">U</span>
-
-						</button>
-
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-menu-btn">
-						<a 
-							class="dropdown-item" 
-							href="conta/minha-conta.html"
-						>
-								<i class="bi bi-person-circle"></i>
-								Minha conta
-						</a>
-						<a class="logout dropdown-item" href="#">
-
-							<i class="bi bi-box-arrow-right"></i>
-							Sair
-						</a>
-					</div>
-				</div>
-				<form id="logout-form" action="http://localhost/valid-repos/portal-de-assinaturas-validhub/public/logout" method="POST" class="d-none">
-					<input type="hidden" name="_token" value="pLuum5o4WiazR3VWT4cpkTaSaHlOoXtN8EcHmLz5">         </form>
-				</div>
-			</div>
-
-			<!-- / Navbar -->
-		</nav>
-
-		<!-- / Container -->
+	<div class="text-center">
+		<a class="btn btn-outline-dark" href="cliente/cliente.html">Cliente</a>
+		<a class="btn btn-outline-dark" href="suporte/suporte.html">Suporte</a>
+		<a class="btn btn-outline-dark" href="">Certificadora</a>
+		<a class="btn btn-outline-dark" href="">Administração</a>
 	</div>
-
-	<!-- / Header -->
-</header>
-
-<!-- Subheader -->
-<div id="sub-header" class="text-white">
-	<div class="container h-100">
-		<div class="row h-100 align-items-center">
-			<div class="col-9">
-				<h3>Início</h3>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- Conteúdo -->
-<div class="container mt-4">
-	<div class="card card-content box-app">
-		<div class="card-header">
-			<h3 class="mb-1">Início</h3>
-			<span class="sub-title">Página inicial</span>
-		</div>
-		<div class="card-body">
-			
-		</div>
-	</div>
-</div>
-
-<!-- Footer -->
-<footer class="mt-3 py-4 bg-white">
-	<div class="container">
-		<b class="text-black-50">2021©</b> <a href="http://www.validhub.com.br" class="text-decoration-none" target="_blank">PDECVH</a>
-	</div>
-</footer>
+</main>
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
