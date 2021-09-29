@@ -13,6 +13,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+    <!-- Fonntawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="../../src/css/header.css">
     <link rel="stylesheet" href="../../src/css/global.css">
@@ -140,10 +143,10 @@
                     	Acrescente as informações e adicione os documentos necessários para nossa equipe verificar sua existência.
                     </span>
 
-                    <small class="text-danger">(*) Campos de preenchimento obrigatório</small>
+                    <span class="text-danger">(*) Campos de preenchimento obrigatório</span>
 
                     <div class="row">
-                    	<form action="" class="col-9">
+                    	<form action="" class="col-9 px-0">
                     		<div class="card-body px-0">
 
 							<div class="border-bottom">
@@ -159,30 +162,105 @@
 								        </div>
 								        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
 								            <div class="accordion-body">
+
 								                <div class="form-group row mb-3">
-								                    <label class="col-12 col-md-3 col-form-label">Nome</label>
+								                    <label for="data" class="col-12 col-md-3 col-form-label">
+								                    	Data de envio
+								                    </label>
 								                    <div class="col-12 col-md-9">
-								                        <input class="form-control form-control-solid" type="text" placeholder="Digite seu nome">
+								                        <input id="data" class="form-control form-control-solid" type="text" value="29/09/2021">
 								                    </div>
 								                </div>
 								                <div class="form-group row mb-3">
-								                    <label class="col-12 col-md-3 col-form-label">E-mail</label>
+								                    <label for="ticket" class="col-12 col-md-3 col-form-label">
+								                    	Ticket
+								                    </label>
 								                    <div class="col-12 col-md-9">
-								                        <input class="form-control form-control-solid" type="email" placeholder="Digite seu E-mail">
+								                        <input id="ticket" class="form-control form-control-solid" type="text" value="48756123487">
 								                    </div>
 								                </div>
 								                <div class="form-group row mb-3">
-								                    <label class="col-12 col-md-3 col-form-label">CPF</label>
+								                    <label for="produto" class="col-12 col-md-3 col-form-label">
+								                    	Produto
+								                    </label>
 								                    <div class="col-12 col-md-9">
-								                        <input class="form-control form-control-solid" type="text" placeholder="Digite seu CPF">
+								                        <input id="produto" class="form-control form-control-solid" type="text" value="Lorem ipsum dolor sit amet">
 								                    </div>
 								                </div>
 								                <div class="form-group row mb-3">
-								                    <label class="col-12 col-md-3 col-form-label">Celular</label>
+								                    <label for="nome" class="col-12 col-md-3 col-form-label">	Nome
+								                    </label>
 								                    <div class="col-12 col-md-9">
-								                        <input class="form-control form-control-solid" type="text" placeholder="Digite seu número de celular">
+								                        <input id="nome" class="form-control form-control-solid" type="text" value="John Doe">
 								                    </div>
 								                </div>
+
+								                <div class="form-group row mb-3">
+								                    <label for="nascimento" class="col-12 col-md-3 col-form-label">
+								                    	Data de nascimento<span class="text-danger">*</span>
+								                    </label>
+								                    <div class="col-12 col-md-9">
+								                        <input id="nascimento" class="form-control" value="DD-MM-AAAA" type="date">
+								                    </div>
+								                </div>
+
+								                <div class="form-group row mb-3">
+													<label for="celular" class="col-12 col-md-3 col-form-label">	
+														Celular
+													</label>
+													<div class="col-12 col-md-9">
+														<input id="celular" class="form-control form-control-solid" type="text" value="(55)55555-5555">
+													</div>
+												</div>
+
+												<div class="form-group row mb-3">
+													<label for="email" class="col-12 col-md-3 col-form-label">	E-mail
+													</label>
+													<div class="col-12 col-md-9">
+														<input id="email" class="form-control form-control-solid" type="email" value="johndoe@gmail.com">
+													</div>
+												</div>
+
+												<div class="form-group row mb-3">
+													<label for="e-adicional" class="col-12 col-md-3 col-form-label">
+														E-mail adicional
+													</label>
+													<div class="col-12 col-md-9">
+														<input id="e-adicional" class="form-control" type="email" placeholder="Digite o e-mail adicional">
+													</div>
+												</div>
+
+												<div class="form-group row mb-3">
+													<div class="col-12 col-md-6">
+														<label for="flexRadioDefault1" class="col-form-label mt-1">
+															Tipo de certificado
+															<span class="text-danger">*</span>
+														</label>
+														<div class="row mt-2">
+															<!-- Radios -->
+															<div class="col-md-6">
+															  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+															  <label class="form-check-label" for="flexRadioDefault1">
+															    Pessoa física
+															  </label>
+															</div>
+															<div class="col-md-6">
+															  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+															  <label class="form-check-label" for="flexRadioDefault2">
+															    Pessoa jurídica
+															  </label>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-12 col-md-6">
+														<label for="cpf" class="col-form-label">CPF</label>
+														<div class="">
+															<input id="cpf" class="form-control form-control-solid" type="text" maxlength="11" value="65465465445">
+														</div>
+													</div>
+												</div>
+
 								            </div>
 								        </div>
 								    </div>
@@ -195,29 +273,84 @@
 								        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
 								            <div class="accordion-body">
 								                <div class="form-group row mb-3">
-								                    <label class="col-12 col-md-3 col-form-label">Nome</label>
+
+								                    <label class="col-12 col-md-3 col-form-label">
+								                    	Documento de identificação 
+								                    	<span class="text-danger">*</span>
+								                    </label>
 								                    <div class="col-12 col-md-9">
-								                        <input class="form-control form-control-solid" type="text" placeholder="Digite seu nome">
+								                       <div class="input-group mb-3">
+														  <input type="file" class="form-control" id="inputGroupFile02">
+														  <label class="input-group-text" for="inputGroupFile02"><i class="fas fa-paperclip"></i></label>
+														</div>
 								                    </div>
 								                </div>
+								                
 								                <div class="form-group row mb-3">
-								                    <label class="col-12 col-md-3 col-form-label">E-mail</label>
+
+								                    <label class="col-12 col-md-3 col-form-label">
+								                    	CPF(caso a identidade não contenha...
+								                    </label>
 								                    <div class="col-12 col-md-9">
-								                        <input class="form-control form-control-solid" type="email" placeholder="Digite seu E-mail">
+								                       <div class="input-group mb-3">
+														  <input type="file" class="form-control" id="inputGroupFile02">
+														  <label class="input-group-text" for="inputGroupFile02"><i class="fas fa-paperclip"></i></label>
+														</div>
 								                    </div>
 								                </div>
+
 								                <div class="form-group row mb-3">
-								                    <label class="col-12 col-md-3 col-form-label">CPF</label>
+
+								                    <label class="col-12 col-md-3 col-form-label">
+								                    	Certidão de casamento
+								                    </label>
 								                    <div class="col-12 col-md-9">
-								                        <input class="form-control form-control-solid" type="text" placeholder="Digite seu CPF">
+								                       <div class="input-group mb-3">
+														  <input type="file" class="form-control" id="inputGroupFile02">
+														  <label class="input-group-text" for="inputGroupFile02"><i class="fas fa-paperclip"></i></label>
+														</div>
 								                    </div>
 								                </div>
+
 								                <div class="form-group row mb-3">
-								                    <label class="col-12 col-md-3 col-form-label">Celular</label>
+
+								                    <label class="col-12 col-md-3 col-form-label">
+								                    	Título de eleitor
+								                    </label>
 								                    <div class="col-12 col-md-9">
-								                        <input class="form-control form-control-solid" type="text" placeholder="Digite seu número de celular">
+								                       <div class="input-group mb-3">
+														  <input type="file" class="form-control" id="inputGroupFile02">
+														  <label class="input-group-text" for="inputGroupFile02"><i class="fas fa-paperclip"></i></label>
+														</div>
 								                    </div>
 								                </div>
+
+								                <div class="form-group row mb-3">
+
+								                    <label class="col-12 col-md-3 col-form-label">
+								                    	PIS / PASEP / NIT
+								                    </label>
+								                    <div class="col-12 col-md-9">
+								                       <div class="input-group mb-3">
+														  <input type="file" class="form-control" id="inputGroupFile02">
+														  <label class="input-group-text" for="inputGroupFile02"><i class="fas fa-paperclip"></i></label>
+														</div>
+								                    </div>
+								                </div>
+
+								                <div class="form-group row mb-3">
+
+								                    <label class="col-12 col-md-3 col-form-label">
+								                    	CEI / CAEPF / CNO
+								                    </label>
+								                    <div class="col-12 col-md-9">
+								                       <div class="input-group mb-3">
+														  <input type="file" class="form-control" id="inputGroupFile02">
+														  <label class="input-group-text" for="inputGroupFile02"><i class="fas fa-paperclip"></i></label>
+														</div>
+								                    </div>
+								                </div>
+
 								            </div>
 								        </div>
 								    </div>
@@ -226,17 +359,26 @@
 							</div>
 
 						</div>
+
+						<div>
+		                    <button type="submit" class="btn btn-lg btn-primary px-4">
+		                    	Enviar &nbsp;&nbsp;<i class="fas fa-check"></i>
+		                    </button>
+		                </div>
                    	 	</form>
 
                    	 	<br><br>
-                   	 	<div class="col-3 mt-4 d-flex justify-content-center">
-                   	 		Imprimir
+                   	 	<div class="col-3 mt-5 d-flex justify-content-center">
+                   	 		<div>
+                   	 			<button class="btn btn-primary btn-lg">
+		                   	 		Imprimir&nbsp;&nbsp;
+		                   	 		<i class="fas fa-save"></i>
+		                   	 	</button>
+	                   	 	</div>
                    	 	</div>
                    	</div>
                 </div>
-                <div>
-                    <button type="submit" class="btn btn-lg btn-primary px-4">Agendar</button>
-                </div>
+                
             </div>
 			
 		</div>
