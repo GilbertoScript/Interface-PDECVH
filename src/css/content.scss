@@ -219,6 +219,78 @@ div.alertas a.alerta {
     padding: 1.5rem 2rem 0 2rem !important;
 }
 
+/**** Estilos gerais ****/
+
+/* Botões */
+button {
+    font-size: .85rem !important;
+}
+
+.btn-primary {
+    background-color: #005ca9;
+    border-color: #005ca9;
+}
+
+.container.mt-4 div div.buttons button,
+.container.mt-4 div div.buttons a {
+    font-size: .85rem;
+}
+
+table td.options a,
+table td.options div.btn-group button,
+div.row .col input {
+    font-size: .85rem;
+}
+
+/* Badges */
+table tbody tr td span.bg-primary {
+    background-color: #005ca9 !important;
+}
+
+aside a {
+    color: #3f4254 !important;
+    text-decoration: none;
+
+    &:hover {
+        color: #0d6efd !important;
+    }
+}
+.nav-item .active,
+a:active {
+    color: white !important;
+    text-decoration: none !important;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+/* Footer */
+footer {
+
+    div.container {
+
+        a.text-decoration-none {
+            color: black;
+            transition: .85s;
+
+            &:hover {
+                color: #004d7c;
+            }
+        }
+    }
+}
+
+.accordion-mod {
+    border: 0;
+}
+
+.accordion-button {
+    color: #0c63e4;
+    background-color: #fff !important;
+    border-bottom: 1px solid #0c63e4;
+}
+
 /* Formulário */
 .form-control {
     font-size: .9rem;
@@ -262,7 +334,6 @@ div.contador-todos-registros {
     display: none !important;
 }
 
-
 div.card.box-app>div.card-header strong.protocolo-historico {
     font-size: 1.050rem;
 }
@@ -277,17 +348,6 @@ div.card-body.card-body-historico {
 }
 div.card.box-app>div.card-body {
     padding:1rem 1.5rem;
-}
-
-.badge {
-    font-size: 85%;
-    text-decoration: none;
-
-    &:hover {
-        filter: brightness(1.1);
-        color: #fff;
-    }
-
 }
 
 .btn-light-primary {
