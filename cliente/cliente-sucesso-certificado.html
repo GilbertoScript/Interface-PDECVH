@@ -13,6 +13,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="../src/css/header.css">
     <link rel="stylesheet" href="../src/css/global.css">
@@ -70,7 +73,7 @@
 	<div class="container h-100">
 		<div class="row h-100 align-items-center">
 			<div class="col-9">
-				<h3>Reagendar</h3>
+				<h3>Certificado</h3>
 			</div>
 		</div>
 	</div>
@@ -80,83 +83,30 @@
 <div class="container mt-4">
 	<div class="card card-content box-app">
 		<div class="card-header">
-			<h3 class="mb-1">Reagendar</h3>
-			<span class="sub-title">Reagendamento</span>
+			<h3 class="mb-1">Certificado</h3>
+			<span class="sub-title">Requisição de certificado - VIDaaS</span>
 		</div>
 		<div class="card-body pt-2">
   
-            <div class="row px-2">
+            <div class="row px-2 pt-3">
 
-                <div class="row">
-                	<form class="col-9">
-                		<div class="card-body px-0">
+            	<div class="col-12 col-md-6">
 
-						<div class="border-bottom">
+            		<h6 class="text-primary fs-6 mb-4">Sucesso!</h6>
+            		<p align="justify">
+            			Sua solicitação foi enviada com sucesso, em breve entraremos em contato para realização do agendamento.
+            		</p>
+            	</div>
 
-							<div class="row">
-								<div class="col-12">
-									<h6 class="mb-3 text-primary">Informações pessoais</h6>
-								</div>
-							</div>
-
-							<div class="form-group row mb-3">
-								<label for="name" class="col-12 col-md-3 col-form-label">Nome</label>
-								<div class="col-12 col-md-9">
-									<input id="name" class="form-control form-control-solid" type="text" readonly value="John Doe">
-								</div>
-							</div>
-							<div class="form-group row mb-3">
-								<label class="col-12 col-md-3 col-form-label">E-mail</label>
-								<div class="col-12 col-md-9">
-									<input class="form-control form-control-solid" type="email" readonly value="Johndoe@gmail.com">
-								</div>
-							</div>
-
-							<div class="form-group row mb-3">
-								<label class="col-12 col-md-3 col-form-label">CPF</label>
-								<div class="col-12 col-md-9">
-									<input class="form-control form-control-solid" type="text" maxlength="11" readonly value="45656454645"
-									maxlength="11">
-								</div>
-							</div>
-
-							<div class="form-group row mb-3">
-								<label class="col-12 col-md-3 col-form-label">Celular</label>
-								<div class="col-12 col-md-9">
-									<input class="form-control form-control-solid" type="text" readonly value="(55)55555-5555">
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-
-					<div>
-	                    <a 
-	                    	href="./agendar/cliente-horario.html" 
-	                    	type="submit" 
-	                    	class="btn btn-primary px-4"
-	                    >
-	                		<small>Reagendar</small>
-	                	</a>
-	                </div>
-               	 	</form>
-
-               	 	<br><br>
-               	 	<div class="col-3 mt-3 d-flex justify-content-center">
-               	 		<br><br>
-               	 		<div class="pt-3">
-                   	 		<div>
-                   	 			<span class="text-primary">Número do ticket: 7454654</span>
-                   	 		</div>
-                   	 		
-                   	 		<div class="mt-1 pt-2 pb-3 bg-primary bg-opacity-10 border-start border-primary">
-                   	 			<span class="ps-2">Status</span>
-                   	 			<p class="fw-bold ps-2 mt-1">Não agendado</p>
-                   	 		</div>
-                   	 	</div>
-               	 	</div>
-               	</div>
+            	<div class="col-12 col-md-6">
+            		<img 
+            			src=".././src/assets/concluido.svg" 
+            			alt="Videoconferência" 
+            			class="img-fluid"
+            			style="margin-top: -70px;"
+            		>
+            	</div>
+				
             </div>
 		</div>
 	</div>
