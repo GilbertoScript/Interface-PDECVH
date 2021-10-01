@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="../.././src/assets/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href=".././src/assets/icon.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -13,10 +13,13 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+   	<!-- Fontawesome -->
+   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
     <!-- CSS -->
-    <link rel="stylesheet" href="../../src/css/header.css">
-    <link rel="stylesheet" href="../../src/css/global.css">
-	<link rel="stylesheet" href="../../src/css/content.css">
+    <link rel="stylesheet" href="./../src/css/header.css">
+    <link rel="stylesheet" href="./../src/css/global.css">
+	<link rel="stylesheet" href="./../src/css/content.css">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +40,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark">
 			<a class="navbar-brand" href="cliente-agendar.html">
                 
-                <img src="../../src/assets/icon.png" class="img-fluid mb-2" width="32" alt="">
+                <img src=".././src/assets/icon.png" class="img-fluid mb-2" width="32" alt="">
 				<h3 class="d-inline">PDECVH</h3>
 			</a>
 
@@ -49,15 +52,15 @@
 				<ul class="navbar-nav me-auto">
 
 					<!-- Início -->
-					<li class="nav-item active">
-						<a class="nav-link" href="suporte.html">
+					<li class="nav-item">
+						<a class="nav-link" href="suporte/suporte.html">
 							Início
 						</a>
 					</li>
 
 					<!-- Início -->
-					<li class="nav-item">
-						<a class="nav-link" href="../solicitacoes.html">
+					<li class="nav-item active">
+						<a class="nav-link" href="solicitacoes.html">
 							Solicitações
 						</a>
 					</li>
@@ -106,8 +109,9 @@
 						</a>
 					</div>
 				</div>
-
-
+				<form id="logout-form" action="http://localhost/valid-repos/portal-de-assinaturas-validhub/public/logout" method="POST" class="d-none">
+					<input type="hidden" name="_token" value="pLuum5o4WiazR3VWT4cpkTaSaHlOoXtN8EcHmLz5">         </form>
+				</div>
 			</div>
 
 			<!-- / Navbar -->
@@ -124,7 +128,7 @@
 	<div class="container h-100">
 		<div class="row h-100 align-items-center">
 			<div class="col-9">
-				<h3>Início</h3>
+				<h3>Solicitações</h3>
 			</div>
 		</div>
 	</div>
@@ -133,10 +137,26 @@
 <!-- Conteúdo -->
 <div class="container mt-4">
 	<div class="card card-content box-app">
-		<div class="card-header">
-			<h3 class="mb-1">Início</h3>
-			<span class="sub-title">Dashboard</span>
+		<div class="card-header d-flex justify-content-between">
+			<div>
+				<h3 class="mb-1">Solicitações</h3>
+				<span class="sub-title">Solicitações</span>
+			</div>
+
+			<div>
+				<div class="buttons col text-right">
+	                <button 
+	                	type="button" 
+	                	class="btn btn-primary"
+	                	data-bs-toggle="modal" 
+	                	data-bs-target="#exampleModal"
+	                >
+                        <i class="fas fa-plus-circle"></i> Nova solicitação
+                    </button>
+	            </div>
+	       	</div>
 		</div>
+
 		<div class="card-body">
 			
 		</div>
@@ -149,6 +169,25 @@
 		<b class="text-black-50">2021©</b> <a href="http://www.validhub.com.br" class="text-decoration-none" target="_blank">PDECVH</a>
 	</div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Título</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
