@@ -240,17 +240,12 @@ a:active:hover {
   color: white !important;
 }
 
-/* Footer */
-footer div.container a.text-decoration-none {
-  color: black;
-  transition: 0.85s;
-}
-footer div.container a.text-decoration-none:hover {
-  color: #004d7c;
-}
-
 .accordion-mod {
   border: 0;
+}
+
+.image-mod {
+  margin-top: -90px;
 }
 
 .accordion-button {
@@ -291,6 +286,16 @@ div.header-progresso {
   font-size: 0.8rem;
 }
 
+/* Footer */
+footer div.container a.text-decoration-none {
+  color: black;
+  transition: 0.85s;
+}
+footer div.container a.text-decoration-none:hover {
+  color: #004d7c;
+}
+
+/* Media Querys */
 @media (max-width: 767.98px) {
   div.header-progresso {
     width: 100% !important;
