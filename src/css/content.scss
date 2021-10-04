@@ -1,8 +1,3 @@
-div.card-body.card-body-historico {
-    border-bottom: 1rem solid #eaeaea;
-    margin-bottom: 1rem;
-}
-
 // Box principal
 div.card.box-app {
 	background-color:#FFF;
@@ -10,7 +5,7 @@ div.card.box-app {
 	border-radius:3px;
 	padding:0;
 
-    >div.card-header {
+    div.card-header {
         background-color:transparent;
         font-size:1.3rem;
         margin:0.765rem 1.5rem;
@@ -28,32 +23,49 @@ div.card.box-app {
             color: #9999a3 !important;
             font-size: 1.1rem;
         }
+
+        .collapse-partes.d-flex,
+        span,
+        span small {
+            font-size: 0.90rem;
+        }
+
+        div.card-subtitle {
+            font-size:.9rem;
+        }
+
+        strong.protocolo-historico {
+            font-size: 1.050rem;
+        }
+
+        .collapse-partes.d-flex {
+
+            div.parte:nth-child(n + 4) {
+                display: none;
+            }
+
+            a:nth-child(n + 5) {
+                display: none !important;
+            }
+        }
     }
 
-    >div.card-header div.card-subtitle {
-        font-size:.9rem;
-    }
-
-    >div.card-header figure.logo {
-        background-color: #eef0f8;
-        border-radius: 3px;
-        height: 150px;
-        padding: 10px;
-        width: 150px;
-    }
-
-    >div.card-body {
+    div.card-body {
         padding:1rem 2rem;
     }
 
-    >div.card-filter {
+    div#card-body-listagem {
+        padding: 0;
+    }
+
+    div.card-filter {
         background-color:#EFEFEF;
         display:none;
         margin:0 1.5rem;
         padding:.75rem 1rem;
     }
 
-    >table {
+    table {
         font-size:.85rem;
         margin:1.5rem 0 0 0;
 
@@ -68,12 +80,12 @@ div.card.box-app {
     ul.nav {
         padding: 0 1rem;
 
-        >li.nav-item {
+        li.nav-item {
             margin-bottom: 0;
             padding: 0 1rem;
         }
 
-        >li.nav-item>a {
+        li.nav-item>a {
             border: 0;
             border-bottom: 1px solid transparent;
             color: #545454;
@@ -82,7 +94,7 @@ div.card.box-app {
         }
     }
 
-    >div.card-header.header-historico-fiduciario {
+    div.card-header.header-historico-fiduciario {
         background-color:transparent;
         font-size:1.3rem;
         margin: 0;
@@ -330,30 +342,15 @@ footer {
         width: 100% !important;
     }
 }
-div.contador-todos-registros {
-    margin-top: -1rem;
-}
-.collapse-partes.d-flex div.parte:nth-child(n + 4) {
-    display: none;
-}
-.collapse-partes.d-flex a:nth-child(n + 5) {
-    display: none !important;
+
+
+div.card-listagem {
+    border-bottom: 1rem solid #eef0f8;
 }
 
-div.card.box-app>div.card-header strong.protocolo-historico {
-    font-size: 1.050rem;
-}
-.collapse-partes.d-flex,
-div.card.box-app>div.card-header span,
-div.card.box-app>div.card-header span small {
-    font-size: 0.90rem;
-}
 div.card-body.card-body-historico {
-    border-bottom: 1rem solid #eef0f8;
-    margin-bottom: 1rem;
-}
-div.card.box-app>div.card-body {
-    padding:1rem 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem !important;
 }
 
 .btn-light-primary {

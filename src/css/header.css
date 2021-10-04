@@ -110,9 +110,8 @@ span.initial.text-white {
 /** Media querys **/
 @media (max-width: 991px) {
   .navbar-collapse.justify-content-between {
-    background-color: #070707;
+    background-color: #203D75;
     z-index: 2;
-    border: 1px solid darkgray;
   }
 }
 
