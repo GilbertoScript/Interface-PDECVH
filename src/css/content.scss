@@ -355,6 +355,10 @@ footer {
 div.card-listagem {
     border-bottom: 1rem solid #eef0f8;
 
+    .container {
+        margin-left: -29.5%;
+    }
+
     .timeline {
         padding: 50px 0;
         position: relative;
@@ -372,7 +376,9 @@ div.card-listagem {
     .timeline h6{
         padding: 13px;
         font-weight: lighter;
-        background: #0d6efd;
+        background: #e1e9ff;
+        color: #005ca9;
+        font-weight: 500;
     }
     .timeline p, .timeline time {
         color: #0d6efd
@@ -384,7 +390,7 @@ div.card-listagem {
         top: 0;
         left: 50%;
         width: 0;
-        border-left: 2px dashed #0d6efd;
+        border-left: 1px solid #0d6efd;
         height: 100%;
         z-index: 1;
         transform: translateX(-50%);
@@ -392,28 +398,25 @@ div.card-listagem {
     .timeline-content {
         position: relative;
         border-radius: 0 0 10px 10px;
-        box-shadow: 0px 3px 5px 0px rgba(10, 55, 90, 0.2);
+        box-shadow: 0px 2px 2px 0px rgba(10, 55, 90, 0.2);
         padding-left: 0;
         padding-right: 0;
     }
-    .timeline-nodes:nth-child(odd) h6,
-    .timeline-nodes:nth-child(odd) p {
-        text-align: right;
-    }
+    
     .timeline-nodes:nth-child(odd) .timeline-date {
-        text-align: left;
+        text-align: right;
     }
      
     .timeline-nodes:nth-child(even) .timeline-date {
         text-align: right;
     }
     .timeline-nodes:nth-child(odd) .timeline-content::after {
-        content: "";
+       content: "";
         position: absolute;
         top: 5%;
-        left: 100%;
+        right: 100%;
         width: 0;
-        border-left: 10px solid #0d6efd;
+        border-right: 10px solid #e1e9ff;
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
     }
@@ -423,7 +426,7 @@ div.card-listagem {
         top: 5%;
         right: 100%;
         width: 0;
-        border-right: 10px solid #0d6efd;
+        border-right: 10px solid #e1e9ff;
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
     }
@@ -433,9 +436,9 @@ div.card-listagem {
     }
     .timeline-image::before {
         content: "";
-        width: 40px;
-        height: 40px;
-        border: 2px dashed #0d6efd;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #0d6efd;
         border-radius: 50%;
         display: block;
         position: absolute;
@@ -468,7 +471,7 @@ div.card-listagem {
         top: 0;
         left: 4%;
         width: 0;
-        border-left: 2px dashed #0d6efd;
+        border-left: 1px solid #0d6efd;
         height: 100%;
         z-index: 1;
         transform: translateX(-50%);
