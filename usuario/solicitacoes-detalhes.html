@@ -1,424 +1,298 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href=".././src/assets/icon.png" type="image/x-icon">
 
-    <link rel="shortcut icon" href=".././src/assets/icon.png" type="image/x-icon">
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   <!-- Fontawesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-   	<!-- Fontawesome -->
-   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+   <!-- CSS -->
+   <link rel="stylesheet" href="./../src/css/header.css">
+   <link rel="stylesheet" href="./../src/css/global.css">
+   <link rel="stylesheet" href="./../src/css/content.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./../src/css/header.css">
-    <link rel="stylesheet" href="./../src/css/global.css">
-		<link rel="stylesheet" href="./../src/css/content.css">
+   <!-- Google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-
-	<title>PDECVH - Sistema</title>
+   <title>PDECVH - Sistema</title>
 </head>
+
 <body>
-	
 <!-- Header -->
 <header>
-
-	<!-- Container -->
-	<div class="container">
-
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<a class="navbar-brand" href="cliente-agendar.html">
-                
-                <img src=".././src/assets/icon.png" class="img-fluid mb-2" width="32" alt="">
-				<h3 class="d-inline">PDECVH</h3>
-			</a>
-
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-
-			<div class="collapse navbar-collapse justify-content-between" id="navbar-header">
-				<ul class="navbar-nav me-auto">
-
-					<!-- Início -->
-					<li class="nav-item">
-						<a class="nav-link" href="suporte/suporte.html">
-							Início
-						</a>
-					</li>
-
-					<!-- Início -->
-					<li class="nav-item active">
-						<a class="nav-link" href="solicitacoes.html">
-							Solicitações
-						</a>
-					</li>
-
-					<!-- Início -->
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							Feedback
-						</a>
-					</li>
-
-					<!-- Início -->
-					<li class="nav-item">
-						<a class="nav-link" href="#">
-							Configurações
-						</a>
-					</li>
-
-			        
-				</ul>
-
-				<!-- Dropdown Minha conta -->
-				<div class="my-2 my-lg-0">
-					<div class="user dropdown">
-						<button class="btn shadow-none d-flex align-items-center dropdown-toggle" type="button" id="user-menu-btn" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-
-							<span class="text-white m-1">
-								<i class="bi bi-person-circle"></i>
-								&nbsp;
-							</span>
-							<span class="text-white fw-bold me-2">USUÁRIO</span>
-							<span>&nbsp;&nbsp;&nbsp;</span>
-							<span class="initial text-white">U</span>
-						</button>
-
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-menu-btn">
-						<a class="dropdown-item" href="conta/minha-conta.html">
-							<i class="bi bi-person-circle"></i>
-							Minha conta
-						</a>
-						<a class="logout dropdown-item" href="#">
-
-							<i class="bi bi-box-arrow-right"></i>
-							Sair
-						</a>
-					</div>
-				</div>
-				<form id="logout-form" action="http://localhost/valid-repos/portal-de-assinaturas-validhub/public/logout" method="POST" class="d-none">
-					<input type="hidden" name="_token" value="pLuum5o4WiazR3VWT4cpkTaSaHlOoXtN8EcHmLz5">         </form>
-				</div>
-			</div>
-
-			<!-- / Navbar -->
-		</nav>
-
-		<!-- / Container -->
-	</div>
-
-	<!-- / Header -->
-</header>
+   <!-- Container -->
+   <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+         <a class="navbar-brand" href="cliente-agendar.html">
+            <img src=".././src/assets/icon.png" class="img-fluid mb-2" width="32" alt="">
+            <h3 class="d-inline">PDECVH</h3>
+         </a>
+         <button 
+         	class="navbar-toggler" data-bs-toggle="collapse" 
+         	data-bs-target="#navbar-header" aria-controls="navbar-header" 
+         	aria-expanded="false" aria-label="Toggle navigation"
+         >
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-between" id="navbar-header">
+            <ul class="navbar-nav me-auto">
+               <!-- Início -->
+               <li class="nav-item">
+                  <a class="nav-link" href="suporte/suporte.html">
+                     Início
+                  </a>
+               </li>
+               <!-- Início -->
+               <li class="nav-item active">
+                  <a class="nav-link" href="solicitacoes.html">
+                     Solicitações
+                  </a>
+               </li>
+               <!-- Início -->
+               <li class="nav-item">
+                  <a class="nav-link" href="#">
+                     Feedback
+                  </a>
+               </li>
+               <!-- Início -->
+               <li class="nav-item">
+                  <a class="nav-link" href="#">
+                     Configurações
+                  </a>
+               </li>
+            </ul>
+            <!-- Dropdown Minha conta -->
+            <div class="my-2 my-lg-0">
+               <div class="user dropdown">
+                  <button 
+                  	class="btn shadow-none d-flex align-items-center dropdown-toggle" 
+                  	type="button" id="user-menu-btn" data-bs-toggle="dropdown" 
+                  	data-toggle="dropdown" aria-haspopup="true" 
+                  	aria-expanded="false" data-display="static"
+                  >
+                     <span class="text-white m-1">
+                        <i class="bi bi-person-circle"></i>
+                        &nbsp;
+                     </span>
+                     <span class="text-white fw-bold me-2">USUÁRIO</span>
+                     <span>&nbsp;&nbsp;&nbsp;</span>
+                     <span class="initial text-white">U</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-menu-btn">
+                     <a class="dropdown-item" href="conta/minha-conta.html">
+                        <i class="bi bi-person-circle"></i>
+                        Minha conta
+                     </a>
+                     <a class="logout dropdown-item" href="#">
+                        <i class="bi bi-box-arrow-right"></i>
+                        Sair
+                     </a>
+                  </div>
+               </div>
+               <form id="logout-form" class="d-none">
+                  <input type="hidden" name="_token" value="pLuum5o4WiazR3VWT4cpkTaSaHlOoXtN8EcHmLz5">
+               </form>
+            </div>
+         </div>
+      </nav> <!-- / Navbar -->
+   </div><!-- / Container -->
+</header><!-- / Header -->
 
 <!-- Subheader -->
 <div id="sub-header" class="text-white">
-	<div class="container h-100">
-		<div class="row h-100 align-items-center">
-			<div class="col-9">
-				<h3>Solicitações</h3>
-			</div>
-		</div>
-	</div>
+   <div class="container h-100">
+      <div class="row h-100 align-items-center">
+         <div class="col-9">
+            <h3>Solicitações</h3>
+         </div>
+      </div>
+   </div>
 </div>
 
 <!-- Conteúdo -->
 <div class="container mt-4">
-	<div class="card card-content box-app">
-		
-		<!-- CardHeader -->
-		<div class="card-header header-historico-fiduciario d-flex justify-content-between">
-	      	<div>
-				<h3 class="mb-1">Solicitações</h3>
-				<span class="sub-title">Solicitações</span>
-			</div>
+   <div class="card card-content box-app">
+      <!-- CardHeader -->
+      <div class="card-header header-historico-fiduciario d-flex justify-content-between">
+         <div>
+            <h3 class="mb-1">Solicitações</h3>
+            <span class="sub-title">Solicitações</span>
+         </div>
+         <div>
+            <div class="buttons col text-right">
+               <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fas fa-plus-circle"></i>&nbsp; Nova solicitação
+               </button>
+            </div>
+         </div>
+      </div>
 
-	      	<div>
-				<div class="buttons col text-right">
-		          <button 
-			          	type="button" 
-			          	class="btn btn-primary btn-lg"
-			          	data-bs-toggle="modal" 
-			          	data-bs-target="#exampleModal"
-		          	>
-		          		<i class="fas fa-plus-circle"></i>&nbsp; Nova solicitação
-		        	</button>
-		      	</div>
-		    </div>
-	  	</div>
+      <!-- CardBody -->
+      <div id="card-body-listagem" class="card-body">
+         <!-- CardListagem -->
+         <div class="card-listagem">
+            <div class="card-header">
+               <!-- Row -->
+               <div class="row">
 
-	  	<!-- CardBody -->
-		<div id="card-body-listagem" class="card-body">
+                  <!-- Coluna esquerda -->
+                  <div class="col-12 d-flex d-md-block flex-column align-items-center col-md-8">
+                     <h6 class="text-primary">Detalhes da solicitação</h6>
+                     <figure class="logo float-start me-2 d-flex align-items-center historico">
+                     </figure>
 
-			<!-- CardListagem -->
-			<div class="card-listagem">
-				
-				<div class="card-header">
+                     <span>
+                        <strong class="protocolo-historico">Nome:</strong>
+                        John Doe
+                     </span>
+                     <span class="d-block mt-1 mb-1 mt-md-0 text-center text-md-start">
+                        <small>
+                           <strong>Código: </strong>
+                           108.993
+                        </small>
+                     </span>
+                     <span class="d-block mt-1 mb-1 mt-md-0 text-center text-md-start">
+                        <small>
+                           <strong>CPF / CNPJ: </strong>
+                           048.390.791.02
+                        </small>
+                     </span>
+                     <span class="d-block mt-1 mb-1 mt-md-0 text-center text-md-start">
+                        <small>
+                           <strong>Processo: </strong>
+                           Documentação para Certificação Digital
+                        </small>
+                     </span>
+                     <span class="d-block mt-1 mb-1 mt-md-0 text-center text-md-start">
+                        <small>
+                           <strong>Produto: </strong>
+                           e-CPF A1 de um ano em nuvem - 30.000 assinaturas
+                        </small>
+                     </span>
+                  </div><!-- / Coluna esquerda -->
 
-	                <!-- Row -->
-	                <div class="row">
-	                    <!-- Coluna esquerda -->
-	                    <div class="col-12 d-flex d-md-block flex-column align-items-center col-md-8">
-
-	                    	<h6 class="text-primary">Detalhes da solicitação</h6>
-
-	                    	<figure class="logo float-start me-2 d-flex align-items-center historico">
-                        	</figure>
-
-	                        <!-- Nome -->
-	                        <span>
-		                        <strong class="protocolo-historico">Nome:</strong>
-		                        John Doe
-		                   	</span>
-	                      
-	                        <!-- Informações sobre o registro -->
-	                        <span class="d-block mt-1 mb-1 mt-md-0 text-center text-md-start">
-	                            <small>
-	                                <strong>Código: </strong>
-	                                108.993
-	                            </small>
-	                        </span>
-
-	                        <!-- CPF / CNPJ -->
-	                        <span class="d-block mt-1 mb-1 mt-md-0 text-center text-md-start">
-	                            <small>
-	                                <strong>CPF / CNPJ: </strong>
-	                                048.390.791.02
-	                            </small>
-	                        </span>
-
-	                        <span class="d-block mt-1 mb-1 mt-md-0 text-center text-md-start">
-	                            <small>
-	                                <strong>Processo: </strong>
-	                                Documentação para Certificação Digital
-	                            </small>
-	                        </span>
-
-	                        <span class="d-block mt-1 mb-1 mt-md-0 text-center text-md-start">
-	                            <small>
-	                                <strong>Produto: </strong>
-	                                e-CPF A1 de um ano em nuvem - 30.000 assinaturas
-	                            </small>
-	                        </span>
-
-	                    </div><!-- / Coluna esquerda -->
-	                    <!-- Coluna direita -->
-	                    <div class="col-12 d-flex d-md-block flex-column align-items-center col-md-4 text-end">
-	                        <div class="header-data d-flex align-items-center mt-3 mt-md-0 d-md-inline-block text-end me-2">
-	                            <b class="me-3 me-md-0">Processo aberto em:</b><br>
-	                            <div class="btn btn-light-primary no-hover">
-	                                <b>24/08/2021</b>
-	                            </div>
-	                        </div>
-
-	                        <div class="header-data d-flex align-items-center mt-3 mt-md-0 mb-2 d-md-inline-block text-end">
-	                            <b class="me-3 me-md-0">Status do processo</b><br>
-	                            <div class="btn btn-light-primary no-hover">
-	                                <b>Em andamento</b>
-	                            </div>
-	                            
-	                        </div>
-	                        <br>
-
-	                        <div class="header-data d-flex align-items-center mt-3 mt-md-0 mb-2 d-md-inline-block text-end">
-	                            <b class="me-3 me-md-0">Aberto por</b><br>
-	                            <div class="btn btn-light-primary no-hover">
-	                                <b>Cliente</b>
-	                            </div>
-	                            
-	                        </div>
-
-	                        
-	                        <br>
-	                        
-	                    </div><!-- / Coluna direita -->
-
-
-	                </div><!-- / Row -->
-
-
-	            </div>
-
-	            <div class="m-4 ps-2">
-	            	<h6 class="text-primary">Histórico da solicitação</h6>
-
-	            	<!-- Timeline Histórico -->
-	            	<div class="container mt-3">
-					    <div class="timeline">
-					    	
-					    	<!-- <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes d-flex flex-row-reverse">
-						          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-						            <h6>
-						            	Agendamento e envio de documentos
-						            </h6>
-						            <p class="text-dark">Por: Cliente</p>
-						          </div>
-						          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-						            
-						          </div>
-						          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-						            <time>04-08-2021 10:01</time>
-						          </div>
-					        </div>
-					        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes d-flex flex-row-reverse">
-						          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-						            <h6>
-						            	Agendamento e envio de documentos
-						            </h6>
-						            <p class="text-dark">Por: Cliente</p>
-						          </div>
-						          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-						            
-						          </div>
-						          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-						            <time>04-08-2021 10:01</time>
-						          </div>
-					        </div>
-					        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes d-flex flex-row-reverse">
-						          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-						            <h6>
-						            	Agendamento e envio de documentos
-						            </h6>
-						            <p class="text-dark">Por: Cliente</p>
-						          </div>
-						          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-						            
-						          </div>
-						          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-						            <time>04-08-2021 10:01</time>
-						          </div>
-					        </div>
-					        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes d-flex flex-row-reverse">
-						          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-						            <h6>
-						            	Agendamento e envio de documentos
-						            </h6>
-						            <p class="text-dark">Por: Cliente</p>
-						          </div>
-						          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-						            
-						          </div>
-						          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-						            <time>04-08-2021 10:01</time>
-						          </div>
-					        </div>
-					        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes d-flex flex-row-reverse">
-						          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-						            <h6>
-						            	Agendamento e envio de documentos
-						            </h6>
-						            <p class="text-dark">Por: Cliente</p>
-						          </div>
-						          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-						            
-						          </div>
-						          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-						            <time>04-08-2021 10:01</time>
-						          </div>
-					        </div> -->
-
-					        
-					        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
-						          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-						            <h6>
-						            	Solicitação de certificado digital
-						            </h6>
-						            <p class="text-dark">Foi iniciado por: Cliente</p>
-						          </div>
-						          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-						            
-						          </div>
-						          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-						            <time>04-08-2021 10:01</time>
-						          </div>
-					        </div>
-					        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
-						          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-						            <h6>
-						            	Solicitar certificado
-						            </h6>
-						            <p class="text-dark">Foi aprovado no primeiro ciclo por: Fulano de tal</p>
-						          </div>
-						          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-						            
-						          </div>
-						          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-						            <time>04-08-2021 10:01</time>
-						          </div>
-					        </div>
-					        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
-						          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-						            <h6>
-						            	Atualização de dados
-						            </h6>
-						            <p class="text-dark">Por: Cliente</p>
-						          </div>
-						          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-						            
-						          </div>
-						          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-						            <time>04-08-2021 10:01</time>
-						          </div>
-					        </div>
-					        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
-						          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-						            <h6>
-						            	Agendamento e envio de documentos
-						            </h6>
-						            <p class="text-dark">Por: Cliente</p>
-						          </div>
-						          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-						            
-						          </div>
-						          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-						            <time>04-08-2021 10:01</time>
-						          </div>
-					        </div>
-
-					        <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
-						          <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-						            <h6>
-						            	Atendimento concluido
-						            </h6>
-						            <p class="text-dark">Atendimento concluido</p>
-						          </div>
-						          <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-						            
-						          </div>
-						          <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-						            <time>04-08-2021 10:01</time>
-						          </div>
-					        </div>
-					    </div>
-				    </div>
-
-	            </div>
-	        </div>
-
-
-
-		</div>
-	</div>
+                  <!-- Coluna direita -->
+                  <div class="col-12 d-flex d-md-block flex-column align-items-center col-md-4 text-end">
+                     <div class="header-data d-flex align-items-center mt-3 mt-md-0 d-md-inline-block text-end me-2">
+                        <b class="me-3 me-md-0">Processo aberto em:</b><br>
+                        <div class="btn btn-light-primary no-hover">
+                           <b>24/08/2021</b>
+                        </div>
+                     </div>
+                     <div class="header-data d-flex align-items-center mt-3 mt-md-0 mb-2 d-md-inline-block text-end">
+                        <b class="me-3 me-md-0">Status do processo</b><br>
+                        <div class="btn btn-light-primary no-hover">
+                           <b>Em andamento</b>
+                        </div>
+                     </div>
+                     <br>
+                     <div class="header-data d-flex align-items-center mt-3 mt-md-0 mb-2 d-md-inline-block text-end">
+                        <b class="me-3 me-md-0">Aberto por</b><br>
+                        <div class="btn btn-light-primary no-hover">
+                           <b>Cliente</b>
+                        </div>
+                     </div>
+                     <br>
+                  </div><!-- / Coluna direita -->
+               </div><!-- / Row -->
+            </div>
+            <div class="m-4 ps-2">
+               <h6 class="text-primary">Histórico da solicitação</h6>
+               
+               <!-- Timeline Histórico -->
+               <div class="container mt-3">
+                  <div class="timeline">
+                     <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
+                        <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                           <h6>
+                              Solicitação de certificado digital
+                           </h6>
+                           <p class="text-dark">Foi iniciado por: Cliente</p>
+                        </div>
+                        <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        </div>
+                        <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                           <time>04-08-2021 10:01</time>
+                        </div>
+                     </div>
+                     <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
+                        <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                           <h6>
+                              Solicitar certificado
+                           </h6>
+                           <p class="text-dark">Foi aprovado no primeiro ciclo por: Fulano de tal</p>
+                        </div>
+                        <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        </div>
+                        <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                           <time>04-08-2021 10:01</time>
+                        </div>
+                     </div>
+                     <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
+                        <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                           <h6>
+                              Atualização de dados
+                           </h6>
+                           <p class="text-dark">Por: Cliente</p>
+                        </div>
+                        <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        </div>
+                        <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                           <time>04-08-2021 10:01</time>
+                        </div>
+                     </div>
+                     <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
+                        <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                           <h6>
+                              Agendamento e envio de documentos
+                           </h6>
+                           <p class="text-dark">Por: Cliente</p>
+                        </div>
+                        <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        </div>
+                        <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                           <time>04-08-2021 10:01</time>
+                        </div>
+                     </div>
+                     <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
+                        <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+                           <h6>
+                              Atendimento concluido
+                           </h6>
+                           <p class="text-dark">Atendimento concluido</p>
+                        </div>
+                        <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+                        </div>
+                        <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                           <time>04-08-2021 10:01</time>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </div>
 
 <!-- Footer -->
 <footer class="mt-3 py-4 bg-white">
-	<div class="container">
-		<b class="text-black-50">2021©</b> <a href="http://www.validhub.com.br" class="text-decoration-none" target="_blank">PDECVH</a>
-	</div>
+   <div class="container">
+      <b class="text-black-50">2021©</b> <a href="http://www.validhub.com.br" class="text-decoration-none" target="_blank">PDECVH</a>
+   </div>
 </footer>
-
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

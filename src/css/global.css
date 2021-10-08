@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,35 @@ body {
   background-size: 100% 350px;
   font-family: "Poppins", sans-serif;
   font-size: 0.835rem;
+}
+
+/* Botões */
+.btn-light-primary {
+  background-color: #e1e9ff;
+  color: #005ca9;
+  border-color: #e1e9ff;
+}
+
+.btn-light-primary:hover,
+.btn-light-primary:focus,
+.btn-light-primary:active {
+  background-color: #005ca9;
+  border-color: #005ca9;
+  color: #FFF;
+}
+
+.btn-light-success {
+  background-color: #c3f4ce;
+  color: #28a745;
+  border-color: #c3f4ce;
+}
+
+.btn-light-success:hover,
+.btn-light-success:focus,
+.btn-light-success:active {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=global.css.map */
