@@ -124,15 +124,16 @@
 <!-- Conteúdo -->
 <div class="container mt-4">
    <div class="card card-content box-app">
+
       <!-- CardHeader -->
-      <div class="card-header header-historico-fiduciario d-flex justify-content-between">
+      <div class="card-header header-historico-fiduciario d-flex justify-content-between flex-column flex-md-row">
          <div>
             <h3 class="mb-1">Solicitações</h3>
             <span class="sub-title">Solicitações</span>
          </div>
          <div>
-            <div class="buttons col text-right">
-               <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="buttons col text-right mt-1 mt-md-0">
+               <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fas fa-plus-circle"></i>&nbsp; Nova solicitação
                </button>
             </div>
@@ -197,17 +198,45 @@
                            <b>Em andamento</b>
                         </div>
                      </div>
-                     <br>
+                     <br class="d-none d-md-block">
                      <div class="header-data d-flex align-items-center mt-3 mt-md-0 mb-2 d-md-inline-block text-end">
                         <b class="me-3 me-md-0">Aberto por</b><br>
                         <div class="btn btn-light-primary no-hover">
                            <b>Cliente</b>
                         </div>
                      </div>
-                     <br>
+                     <br class="d-none d-md-block">
                   </div><!-- / Coluna direita -->
                </div><!-- / Row -->
             </div>
+            <div class="card-body card-body-historico d-flex flex-column d-md-block">
+
+               <!-- Div Opções -->
+               <div 
+                  class="opcoes btn-group d-flex flex-column flex-md-row mt-md-0 float-end" 
+                  role="group"
+               >
+
+                  <!-- Dropdown -->
+                  <div class="dropdown me-md-2 row">
+                     <a 
+                        class="btn btn-primary dropdown-toggle dropdown-solicitacoes col-12" 
+                        id="actions" 
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                     >
+                        <small>Ações nessa solicitação</small>
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="actions">
+                        <li><a class="dropdown-item" href="#">Ação</a></li>
+                        <li><a class="dropdown-item" href="#">Outra Ação</a></li>
+                     </ul>
+                  </div>
+
+               </div><!-- / Div Opções -->
+            </div>
+
+            <div class="separador"></div>
+
             <div class="m-4 ps-2">
                <h6 class="text-primary">Histórico da solicitação</h6>
                
@@ -216,66 +245,56 @@
                   <div class="timeline">
                      <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
                         <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                           <h6>
-                              Solicitação de certificado digital
-                           </h6>
+                           <h6>Solicitação de certificado digital</h6>
                            <p class="text-dark">Foi iniciado por: Cliente</p>
                         </div>
                         <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
                         </div>
-                        <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <div class="col-12 col-md-5 order-1 order-md-3 py-3 timeline-date">
                            <time>04-08-2021 10:01</time>
                         </div>
                      </div>
                      <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
                         <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                           <h6>
-                              Solicitar certificado
-                           </h6>
+                           <h6>Solicitar certificado</h6>
                            <p class="text-dark">Foi aprovado no primeiro ciclo por: Fulano de tal</p>
                         </div>
                         <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
                         </div>
-                        <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <div class="col-12 col-md-5 order-1 order-md-3 py-3 timeline-date">
                            <time>04-08-2021 10:01</time>
                         </div>
                      </div>
                      <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
                         <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                           <h6>
-                              Atualização de dados
-                           </h6>
+                           <h6>Atualização de dados</h6>
                            <p class="text-dark">Por: Cliente</p>
                         </div>
                         <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
                         </div>
-                        <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <div class="col-12 col-md-5 order-1 order-md-3 py-3 timeline-date">
                            <time>04-08-2021 10:01</time>
                         </div>
                      </div>
                      <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
                         <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                           <h6>
-                              Agendamento e envio de documentos
-                           </h6>
+                           <h6>Agendamento e envio de documentos</h6>
                            <p class="text-dark">Por: Cliente</p>
                         </div>
                         <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
                         </div>
-                        <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <div class="col-12 col-md-5 order-1 order-md-3 py-3 timeline-date">
                            <time>04-08-2021 10:01</time>
                         </div>
                      </div>
                      <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes flex-row-reverse">
                         <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-                           <h6>
-                              Atendimento concluido
-                           </h6>
+                           <h6>Atendimento concluido</h6>
                            <p class="text-dark">Atendimento concluido</p>
                         </div>
                         <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
                         </div>
-                        <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+                        <div class="col-12 col-md-5 order-1 order-md-3 py-3 timeline-date">
                            <time>04-08-2021 10:01</time>
                         </div>
                      </div>

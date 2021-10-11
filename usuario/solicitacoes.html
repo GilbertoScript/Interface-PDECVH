@@ -126,14 +126,14 @@
    <div class="card card-content box-app">
 
       <!-- CardHeader -->
-      <div class="card-header header-historico-fiduciario d-flex justify-content-between">
+      <div class="card-header header-historico-fiduciario d-flex justify-content-between flex-column flex-md-row">
          <div>
             <h3 class="mb-1">Solicitações</h3>
             <span class="sub-title">Solicitações</span>
          </div>
          <div>
-            <div class="buttons col text-right">
-               <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="buttons col text-right mt-1 mt-md-0">
+               <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fas fa-plus-circle"></i>&nbsp; Nova solicitação
                </button>
             </div>
@@ -190,26 +190,44 @@
                            <b>Em andamento</b>
                         </div>
                      </div>
-                     <br>
+                     <br class="d-none d-md-block">
                      <div class="header-data d-flex align-items-center mt-3 mt-md-0 mb-2 d-md-inline-block text-end">
                         <b class="me-3 me-md-0">Aberto por</b><br>
                         <div class="btn btn-light-primary no-hover">
                            <b>Cliente</b>
                         </div>
                      </div>
-                     <br>
+                     <br class="d-none d-md-block">
                   </div><!-- / Coluna direita -->
                </div><!-- / Row -->
             </div>
             <div class="card-body card-body-historico d-flex flex-column d-md-block">
+
                <!-- Div Opções -->
-               <div class="opcoes btn-group d-flex d-md-block flex-column mt-md-0 float-end" role="group">
+               <div 
+                  class="opcoes btn-group d-flex flex-column flex-md-row mt-md-0 float-end" 
+                  role="group"
+               >
+
+                  <!-- Dropdown -->
+                  <div class="dropdown me-md-2">
+                     <a class="btn w-100 btn-primary dropdown-toggle dropdown-solicitacoes" type="button" id="actions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <small>Ações nessa solicitação</small>
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="actions">
+                        <li><a class="dropdown-item" href="#">Ação</a></li>
+                        <li><a class="dropdown-item" href="#">Outra Ação</a></li>
+                     </ul>
+                  </div>
+
                   <!-- Botão para acessar o registro completo -->
-                  <a href="solicitacoes-detalhes.html" class="btn btn-primary me-0 me-md-2 mb-2 mb-md-0">
-                     <small>
-                        Acessar
-                     </small>
+                  <a 
+                     href="solicitacoes-detalhes.html" 
+                     class="w-100 btn btn-primary me-0 me-md-2 mb-2 mb-md-0 col-3 mt-2 mt-md-0"
+                  >
+                     <small>Acessar</small>
                   </a>
+
                </div><!-- / Div Opções -->
             </div>
          </div>
@@ -262,26 +280,44 @@
                            <b>Em andamento</b>
                         </div>
                      </div>
-                     <br>
+                     <br class="d-none d-md-block">
                      <div class="header-data d-flex align-items-center mt-3 mt-md-0 mb-2 d-md-inline-block text-end">
                         <b class="me-3 me-md-0">Aberto por</b><br>
                         <div class="btn btn-light-primary no-hover">
                            <b>Cliente</b>
                         </div>
                      </div>
-                     <br>
+                     <br class="d-none d-md-block">
                   </div><!-- / Coluna direita -->
                </div><!-- / Row -->
             </div>
             <div class="card-body card-body-historico d-flex flex-column d-md-block">
+
                <!-- Div Opções -->
-               <div class="opcoes btn-group d-flex d-md-block flex-column mt-md-0 float-end" role="group">
+               <div 
+                  class="opcoes btn-group d-flex flex-column flex-md-row mt-md-0 float-end" 
+                  role="group"
+               >
+
+                  <!-- Dropdown -->
+                  <div class="dropdown me-md-2">
+                     <a class="btn w-100 btn-primary dropdown-toggle dropdown-solicitacoes" type="button" id="actions" data-bs-toggle="dropdown" aria-expanded="false">
+                        <small>Ações nessa solicitação</small>
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="actions">
+                        <li><a class="dropdown-item" href="#">Ação</a></li>
+                        <li><a class="dropdown-item" href="#">Outra Ação</a></li>
+                     </ul>
+                  </div>
+
                   <!-- Botão para acessar o registro completo -->
-                  <a href="solicitacoes-detalhes.html" class="btn btn-primary me-0 me-md-2 mb-2 mb-md-0">
-                     <small>
-                        Acessar
-                     </small>
+                  <a 
+                     href="solicitacoes-detalhes.html" 
+                     class="w-100 btn btn-primary me-0 me-md-2 mb-2 mb-md-0 col-3 mt-2 mt-md-0"
+                  >
+                     <small>Acessar</small>
                   </a>
+
                </div><!-- / Div Opções -->
             </div>
          </div>
