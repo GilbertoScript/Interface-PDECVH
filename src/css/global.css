@@ -44,4 +44,18 @@ body {
   color: #FFF;
 }
 
+.btn-light-danger {
+  background-color: #fab1a0;
+  color: #d63031;
+  border-color: #fab1a0;
+}
+
+.btn-light-danger:hover,
+.btn-light-danger:focus,
+.btn-light-danger:active {
+  background-color: #d63031;
+  border-color: #d63031;
+  color: #FFF;
+}
+
 /*# sourceMappingURL=global.css.map */
