@@ -409,6 +409,10 @@ footer div.container a.text-decoration-none:hover {
     width: 100% !important;
   }
 
+  div.card-body {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
   div.card-body .card-body-historico {
     margin-bottom: 0.5rem !important;
   }
