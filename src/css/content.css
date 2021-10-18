@@ -4,8 +4,6 @@ div.card.box-app {
   border: none;
   border-radius: 3px;
   padding: 0;
-  /* Wizard */
-  /* CardStatus */
 }
 div.card.box-app div.card-header {
   background-color: transparent;
@@ -50,6 +48,10 @@ div.card.box-app div.card-header .collapse-partes.d-flex a:nth-child(n+5) {
 }
 div.card.box-app div.card-body {
   padding: 1rem 2rem;
+  /* Wizard */
+}
+div.card.box-app div.card-body div.status-card {
+  border-radius: 10px;
 }
 div.card.box-app div.card-body .card-body-gerenciamento {
   margin-bottom: 0.5rem;
@@ -67,8 +69,132 @@ div.card.box-app div.card-body .card-body-historico .dropdown-solicitacoes {
   border-end-end-radius: 0;
   border-start-end-radius: 0;
 }
+div.card.box-app div.card-body .wizard .wizard-item {
+  color: #b5b5c3;
+}
+div.card.box-app div.card-body .wizard .wizard-item > span {
+  font-size: 1.5rem;
+  margin-right: 0.2rem;
+}
+div.card.box-app div.card-body .wizard .wizard-item::after {
+  content: "";
+  display: block;
+  background-color: #e0e0e0;
+  height: 5px;
+  width: 100%;
+}
+div.card.box-app div.card-body .wizard .wizard-item.active {
+  color: #2881b9;
+}
+div.card.box-app div.card-body .wizard .wizard-item.active::after {
+  background-color: #2881b9;
+}
 div.card.box-app div#card-body-listagem {
   padding: 0;
+}
+div.card.box-app div#card-body-listagem div.card-listagem:first-child > div.card-header {
+  padding-top: 0 !important;
+}
+div.card.box-app div#card-body-listagem div.card-listagem {
+  border-bottom: 1rem solid #eef0f8;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container {
+  margin-left: -29.5%;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline {
+  padding: 50px 0;
+  position: relative;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  border-left: 1px solid #0d6efd;
+  height: 100%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes {
+  padding-bottom: 35px;
+  position: relative;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content {
+  position: relative;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 2px 2px 0px rgba(10, 55, 90, 0.2);
+  padding-left: 0;
+  padding-right: 0;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content h6, div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content p {
+  padding: 5px 15px;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content p, div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content time {
+  color: #0d6efd;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content h6 {
+  padding: 13px;
+  font-weight: lighter;
+  background: #e1e9ff;
+  color: #005ca9;
+  font-weight: 500;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-image {
+  position: relative;
+  z-index: 100;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-image img {
+  position: relative;
+  z-index: 100;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-image::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #0d6efd;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 1;
+  margin-top: 20px;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(even) {
+  flex-direction: row-reverse;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(even) .timeline-date {
+  text-align: right;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(even) .timeline-content::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 100%;
+  width: 0;
+  border-right: 10px solid #e1e9ff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(odd) .timeline-date {
+  text-align: right;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(odd) .timeline-content::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 100%;
+  width: 0;
+  border-right: 10px solid #e1e9ff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+div.card.box-app div#card-body-listagem div.card-listagem .separador {
+  border-bottom: 1rem solid #eef0f8;
 }
 div.card.box-app div.card-filter {
   background-color: #EFEFEF;
@@ -105,72 +231,11 @@ div.card.box-app div.card-header.header-historico-fiduciario {
 div.card.box-app div.tab-content {
   padding: 2rem;
 }
-div.card.box-app .wizard .wizard-item {
-  color: #b5b5c3;
-}
-div.card.box-app .wizard .wizard-item::after {
-  content: "";
-  display: block;
-  background-color: #e0e0e0;
-  height: 5px;
-  width: 100%;
-}
-div.card.box-app .wizard .wizard-item.active {
-  color: #2881b9;
-}
-div.card.box-app .wizard .wizard-item.active::after {
-  background-color: #2881b9;
-}
-div.card.box-app .wizard .wizard-item > span {
-  font-size: 1.5rem;
-  margin-right: 0.2rem;
-}
-div.card.box-app div.status-card {
-  border-radius: 10px;
-}
 
 .collapse-partes button.btn-block {
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
-
-/* Alertas */
-/* Alertas iniciais */
-div.alertas a.alerta {
-  background: white;
-  border: 1px solid #EAEAEA;
-  border-bottom: 5px solid #EAEAEA;
-  border-radius: 0 0 2px 2px;
-  color: #545454;
-  display: block;
-  padding: 2rem 1rem 1.5rem 1rem;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: 0.4s;
-}
-div.alertas a.alerta:hover {
-  color: black;
-}
-div.alertas a.alerta:hover > i {
-  border-color: black;
-}
-div.alertas a.alerta > span.badge {
-  border-radius: 0 0 0 12px;
-  display: block;
-  padding: 0.5rem 1rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-div.alertas a.alerta > i {
-  border: 3px solid #EAEAEA;
-  border-radius: 100%;
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  padding: 1rem 1.5rem;
-  transition: 0.4s;
 }
 
 /* Tabs */
@@ -269,110 +334,6 @@ div.header-progresso {
   font-size: 0.8rem;
 }
 
-div.card-listagem {
-  border-bottom: 1rem solid #eef0f8;
-}
-div.card-listagem .container {
-  margin-left: -29.5%;
-}
-div.card-listagem .separador {
-  border-bottom: 1rem solid #eef0f8;
-}
-div.card-listagem .timeline {
-  padding: 50px 0;
-  position: relative;
-}
-div.card-listagem .timeline-nodes {
-  padding-bottom: 35px;
-  position: relative;
-}
-div.card-listagem .timeline-nodes:nth-child(even) {
-  flex-direction: row-reverse;
-}
-div.card-listagem .timeline h6,
-div.card-listagem .timeline p {
-  padding: 5px 15px;
-}
-div.card-listagem .timeline h6 {
-  padding: 13px;
-  font-weight: lighter;
-  background: #e1e9ff;
-  color: #005ca9;
-  font-weight: 500;
-}
-div.card-listagem .timeline p,
-div.card-listagem .timeline time {
-  color: #0d6efd;
-}
-div.card-listagem .timeline::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  border-left: 1px solid #0d6efd;
-  height: 100%;
-  z-index: 1;
-  transform: translateX(-50%);
-}
-div.card-listagem .timeline-content {
-  position: relative;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0px 2px 2px 0px rgba(10, 55, 90, 0.2);
-  padding-left: 0;
-  padding-right: 0;
-}
-div.card-listagem .timeline-nodes:nth-child(odd) .timeline-date {
-  text-align: right;
-}
-div.card-listagem .timeline-nodes:nth-child(even) .timeline-date {
-  text-align: right;
-}
-div.card-listagem .timeline-nodes:nth-child(odd) .timeline-content::after {
-  content: "";
-  position: absolute;
-  top: 5%;
-  right: 100%;
-  width: 0;
-  border-right: 10px solid #e1e9ff;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-}
-div.card-listagem .timeline-nodes:nth-child(even) .timeline-content::after {
-  content: "";
-  position: absolute;
-  top: 5%;
-  right: 100%;
-  width: 0;
-  border-right: 10px solid #e1e9ff;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-}
-div.card-listagem .timeline-image {
-  position: relative;
-  z-index: 100;
-}
-div.card-listagem .timeline-image::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border: 1px solid #0d6efd;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  z-index: 1;
-  margin-top: 20px;
-}
-div.card-listagem .timeline-image img {
-  position: relative;
-  z-index: 100;
-}
-
 /* Footer */
 footer div.container a.text-decoration-none {
   color: black;
@@ -383,26 +344,6 @@ footer div.container a.text-decoration-none:hover {
 }
 
 /* Media Querys */
-/* Extra small device style */
-@media (max-width: 575px) {
-  .timeline::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 3%;
-  }
-
-  .timeline-image {
-    position: absolute;
-    left: -5%;
-  }
-
-  .timeline-image::before {
-    width: 60px;
-    height: 60px;
-  }
-}
 /* Medium device style */
 @media (max-width: 767.98px) {
   div.header-progresso {
@@ -417,60 +358,32 @@ footer div.container a.text-decoration-none:hover {
     margin-bottom: 0.5rem !important;
   }
 
-  div.card-listagem .container {
-    margin-left: 0;
-  }
   div.card-listagem .w-md-100 {
     width: 100%;
   }
-  div.card-listagem .timeline {
-    padding: 25px 0;
+  div.card-listagem div.container {
+    margin-left: 0 !important;
   }
-  div.card-listagem .timeline::before {
-    display: none;
+  div.card-listagem div.container .timeline {
+    padding: 25px 0 !important;
   }
-  div.card-listagem .timeline .timeline-image {
-    position: absolute;
-    left: 0%;
-    top: 60px;
+  div.card-listagem div.container .timeline::before {
+    display: none !important;
   }
-  div.card-listagem .timeline .timeline-image::before {
-    display: none;
+  div.card-listagem div.container .timeline .timeline-nodes .timeline-image {
+    display: none !important;
   }
-  div.card-listagem .timeline .timeline-content {
+  div.card-listagem div.container .timeline .timeline-nodes .timeline-content {
     width: 100%;
   }
-  div.card-listagem .timeline .timeline-content h6 {
+  div.card-listagem div.container .timeline .timeline-nodes .timeline-content h6 {
     font-size: 1.05rem;
   }
-
-  .timeline-nodes:nth-child(odd) h6,
-.timeline-nodes:nth-child(odd) p {
-    text-align: left;
-  }
-
-  .timeline-nodes:nth-child(even) {
-    flex-direction: row;
-  }
-
-  .timeline h6 {
-    font-size: 1.7rem;
-  }
-
-  .timeline p {
+  div.card-listagem div.container .timeline .timeline-nodes .timeline-content p {
     font-size: 14px;
   }
-
-  .timeline-nodes:nth-child(odd) .timeline-content::after {
-    display: none;
-  }
-
-  .timeline-nodes:nth-child(even) .timeline-content::after {
-    display: none;
-  }
-
-  .timeline-nodes:nth-child(even) .timeline-date {
-    text-align: left;
+  div.card-listagem div.container .timeline .timeline-nodes .timeline-content::after {
+    display: none !important;
   }
 }
 
