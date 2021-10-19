@@ -58,6 +58,7 @@ div.card.box-app {
       }
    }
 
+
    div.card-body {
       padding: 1rem 2rem;
 
@@ -84,6 +85,8 @@ div.card.box-app {
             border-start-end-radius: 0;
          }
       }
+
+      
 
       /* Wizard */
       .wizard {
@@ -292,6 +295,40 @@ div.card.box-app {
    div.tab-content {
       padding: 2rem;
    }
+
+   button.btn-primary,
+   button.btn-light-primary {
+
+      span.imprimir {
+         padding-right: 18px;
+         padding-left: 2px;
+      }
+
+      span.nova_solicitacao,
+      span.novo_usuario {
+         padding-left: 11px;
+      }
+
+      span.editar_usuario,
+      span.remover_usuario {
+         padding-left: 20px;
+      }
+
+      i.fi-rr-add:before,
+      i.fi-rr-user-add:before,
+      i.fi-rr-edit:before,
+      i.fi-rr-trash:before {
+         position: absolute !important;
+         padding-top: 3.6px;
+      }
+
+      i.fi-rr-disk:before {
+         position: absolute !important;
+         padding-top: 4px;
+         right: 100%;
+         left: 85.5%;
+      }
+   } 
 
 }
 

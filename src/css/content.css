@@ -231,6 +231,41 @@ div.card.box-app div.card-header.header-historico-fiduciario {
 div.card.box-app div.tab-content {
   padding: 2rem;
 }
+div.card.box-app button.btn-primary span.imprimir,
+div.card.box-app button.btn-light-primary span.imprimir {
+  padding-right: 18px;
+  padding-left: 2px;
+}
+div.card.box-app button.btn-primary span.nova_solicitacao,
+div.card.box-app button.btn-primary span.novo_usuario,
+div.card.box-app button.btn-light-primary span.nova_solicitacao,
+div.card.box-app button.btn-light-primary span.novo_usuario {
+  padding-left: 11px;
+}
+div.card.box-app button.btn-primary span.editar_usuario,
+div.card.box-app button.btn-primary span.remover_usuario,
+div.card.box-app button.btn-light-primary span.editar_usuario,
+div.card.box-app button.btn-light-primary span.remover_usuario {
+  padding-left: 20px;
+}
+div.card.box-app button.btn-primary i.fi-rr-add:before,
+div.card.box-app button.btn-primary i.fi-rr-user-add:before,
+div.card.box-app button.btn-primary i.fi-rr-edit:before,
+div.card.box-app button.btn-primary i.fi-rr-trash:before,
+div.card.box-app button.btn-light-primary i.fi-rr-add:before,
+div.card.box-app button.btn-light-primary i.fi-rr-user-add:before,
+div.card.box-app button.btn-light-primary i.fi-rr-edit:before,
+div.card.box-app button.btn-light-primary i.fi-rr-trash:before {
+  position: absolute !important;
+  padding-top: 3.6px;
+}
+div.card.box-app button.btn-primary i.fi-rr-disk:before,
+div.card.box-app button.btn-light-primary i.fi-rr-disk:before {
+  position: absolute !important;
+  padding-top: 4px;
+  right: 100%;
+  left: 85.5%;
+}
 
 .collapse-partes button.btn-block {
   width: 100%;

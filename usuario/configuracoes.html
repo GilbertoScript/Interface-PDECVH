@@ -12,8 +12,8 @@
    <!-- Bootstrap Icons -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-   <!-- Fontawesome -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+   <!-- FlatIcons Ui -->
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
    <!-- CSS -->
    <link rel="stylesheet" href="./../src/css/header.css">
@@ -77,13 +77,13 @@
             <div class="my-2 my-lg-0">
                <div class="user dropdown">
                   <button 
-                  	class="btn shadow-none d-flex align-items-center dropdown-toggle" 
-                  	type="button" id="user-menu-btn" data-bs-toggle="dropdown"
-                  	data-toggle="dropdown" aria-haspopup="true" 
-                  	aria-expanded="false" data-display="static"
+                     class="btn shadow-none d-flex align-items-center dropdown-toggle" 
+                     type="button" id="user-menu-btn" data-bs-toggle="dropdown"
+                     data-toggle="dropdown" aria-haspopup="true" 
+                     aria-expanded="false" data-display="static"
                   >
                      <span class="text-white m-1">
-                        <i class="bi bi-person-circle"></i>
+                        <i class="fi fi-rr-user fs-6"></i>
                         &nbsp;
                      </span>
                      <span class="text-white fw-bold me-2">USUÁRIO</span>
@@ -92,11 +92,11 @@
                   </button>
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-menu-btn">
                      <a class="dropdown-item" href="conta/minha-conta.html">
-                        <i class="bi bi-person-circle"></i>
+                        <i class="fi fi-rr-user"></i>
                         Minha conta
                      </a>
                      <a class="logout dropdown-item" href="#">
-                        <i class="bi bi-box-arrow-right"></i>
+                        <i class="fi fi-rr-sign-out"></i>
                         Sair
                      </a>
                   </div>
@@ -134,7 +134,8 @@
          <div>
             <div class="buttons col text-right mt-1 mt-md-0">
                <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#newUserModal">
-                  <i class="fas fa-user-plus"></i>&nbsp; Novo usuário
+                  <i class="fi fi-rr-user-add"></i> &nbsp; 
+                  <span class="novo_usuario">Novo usuário</span>
                </button>
             </div>
          </div>
@@ -184,7 +185,7 @@
                         type="button" 
                         class="w-md-100 btn btn-lg btn-light-primary ms-2 mt-1 mt-md-0"
                      >
-                       <i class="fas fa-edit"></i> Editar
+                       <i class="fi fi-rr-edit"></i> <span class="editar_usuario">Editar</span>
                      </button>
 
                      <button 
@@ -193,7 +194,7 @@
                         type="button" 
                         class="w-md-100 btn btn-lg btn-light-primary ms-2 mt-1 mt-md-0"
                      >
-                        <i class="fas fa-trash-alt"></i> Remover
+                        <i class="fi fi-rr-trash"></i> <span class="remover_usuario">Remover</span>
                      </button>
                   </div><!-- / Coluna direita -->
                </div><!-- / Row -->
@@ -242,7 +243,7 @@
                         type="button" 
                         class="w-md-100 btn btn-lg btn-light-primary ms-2 mt-1 mt-md-0"
                      >
-                       <i class="fas fa-edit"></i> Editar
+                       <i class="fi fi-rr-edit"></i> <span class="editar_usuario">Editar</span>
                      </button>
 
                      <button 
@@ -251,7 +252,7 @@
                         type="button" 
                         class="w-md-100 btn btn-lg btn-light-primary ms-2 mt-1 mt-md-0"
                      >
-                        <i class="fas fa-trash-alt"></i> Remover
+                        <i class="fi fi-rr-trash"></i> <span class="remover_usuario">Remover</span>
                      </button>
                   </div><!-- / Coluna direita -->
                </div><!-- / Row -->
