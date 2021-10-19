@@ -91,19 +91,22 @@ div#sub-header {
    ol.breadcrumb {
       background-color: transparent;
       padding: 0;
-   }
 
-   ol.breadcrumb>li.breadcrumb-item {
-      color: #FFF;
-   }
+      >li {
 
-   ol.breadcrumb>li.breadcrumb-item>a {
-      color: rgba(255, 255, 255, 0.7);
-      text-decoration: none;
-   }
+         &.breadcrumb-item {
+            color: #FFF;
 
-   ol.breadcrumb>li.breadcrumb-item+li.breadcrumb-item::before {
-      color: #FFF;
+            >a {
+               color: rgba(255, 255, 255, 0.7);
+               text-decoration: none;
+            }
+         }
+
+         &.breadcrumb-item+li.breadcrumb-item::before {
+            color: #FFF;
+         }
+      }
    }
 
    div.signature a {
