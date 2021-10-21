@@ -1,6 +1,16 @@
-// Box principal
+/* Variáveis */
+$backgroundCinza: #eef0f8;
+$brancoPadrao: #fff;
+$pretoPadrao: #181c32;
+$cinza500: #9999a3;
+$azulAccordion: #0c63e4;
+$azulTimeline: #0d6efd;
+$azulBtnPrimary: #005ca9;
+$azul200: #e1e9ff;
+
+/* Box principal */
 div.card.box-app {
-   background-color: #FFF;
+   background-color: $brancoPadrao;
    border: none;
    border-radius: 3px;
    padding: 0;
@@ -13,19 +23,28 @@ div.card.box-app {
       border: 0;
       border-bottom: 1px solid rgba(0, 0, 0, .125);
 
+      &.header-historico-fiduciario {
+         background-color: transparent;
+         font-size: 1.3rem;
+         margin: 0;
+         padding: 1.75rem;
+         border-bottom: 1rem solid $backgroundCinza;
+         margin-bottom: 1rem;
+      }
+
       h3 {
-         color: #181c32;
+         color: $pretoPadrao;
          font-size: 1.275rem;
          font-weight: 600;
       }
 
       .sub-title {
-         color: #9999a3 !important;
+         color: $cinza500;
          font-size: 1.1rem;
       }
 
       figure.logo {
-         background-color: #eef0f8;
+         background-color: $backgroundCinza;
          border-radius: 3px;
          height: 125px;
          padding: 10px;
@@ -58,12 +77,25 @@ div.card.box-app {
       }
    }
 
-
    div.card-body {
       padding: 1rem 2rem;
 
       div.status-card {
          border-radius: 10px;
+      }
+
+      .accordion-mod {
+         border: 0;
+      }
+
+      .image-mod {
+         margin-top: -90px;
+      }
+
+      .accordion-button {
+         color: $azulAccordion;
+         background-color: $brancoPadrao !important;
+         border-bottom: 1px solid $azulAccordion;
       }
 
       .card-body-gerenciamento {
@@ -85,8 +117,6 @@ div.card.box-app {
             border-start-end-radius: 0;
          }
       }
-
-      
 
       /* Wizard */
       .wizard {
@@ -116,7 +146,6 @@ div.card.box-app {
             }
          }
       } 
-
    }
 
    div#card-body-listagem {
@@ -130,11 +159,20 @@ div.card.box-app {
       }
 
       div.card-listagem {
-         border-bottom: 1rem solid #eef0f8;
+         border-bottom: 1rem solid $backgroundCinza;
+
+         div.header-data {
+            font-size: .8rem;
+
+            .btn {
+               font-size: .8rem !important;
+            }
+         }
 
          .container {
             margin-left: -29.5%;
 
+            /* Timleline dentro de detalhes da solicitação */
             .timeline {
                padding: 50px 0;
                position: relative;
@@ -146,7 +184,7 @@ div.card.box-app {
                   top: 0;
                   left: 50%;
                   width: 0;
-                  border-left: 1px solid #0d6efd;
+                  border-left: 1px solid $azulTimeline;
                   height: 100%;
                   z-index: 1;
                   transform: translateX(-50%);
@@ -167,15 +205,11 @@ div.card.box-app {
                         padding: 5px 15px;
                      }
 
-                     p, time {
-                        color: #0d6efd
-                     }
-
                      h6 {
                         padding: 13px;
                         font-weight: lighter;
-                        background: #e1e9ff;
-                        color: #005ca9;
+                        background: $azul200;
+                        color: $azulBtnPrimary;
                         font-weight: 500;
                      }
                   }
@@ -193,14 +227,14 @@ div.card.box-app {
                         content: "";
                         width: 20px;
                         height: 20px;
-                        border: 1px solid #0d6efd;
+                        border: 1px solid $azulTimeline;
                         border-radius: 50%;
                         display: block;
                         position: absolute;
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
-                        background-color: #fff;
+                        background-color: $brancoPadrao;
                         z-index: 1;
                         margin-top: 20px;
                      }
@@ -208,24 +242,10 @@ div.card.box-app {
 
                   &:nth-child(even) {
                      flex-direction: row-reverse;
-
-                     .timeline-date {
-                        text-align: right;
-                     }
-
-                     .timeline-content::after {
-                        content: "";
-                        position: absolute;
-                        top: 5%;
-                        right: 100%;
-                        width: 0;
-                        border-right: 10px solid #e1e9ff;
-                        border-top: 10px solid transparent;
-                        border-bottom: 10px solid transparent;
-                     }
                   }
 
-                  &:nth-child(odd) {
+                  &:nth-child(odd),
+                  &:nth-child(even) {
 
                      .timeline-date {
                         text-align: right;
@@ -237,7 +257,7 @@ div.card.box-app {
                         top: 5%;
                         right: 100%;
                         width: 0;
-                        border-right: 10px solid #e1e9ff;
+                        border-right: 10px solid $azul200;
                         border-top: 10px solid transparent;
                         border-bottom: 10px solid transparent;
                      }
@@ -247,7 +267,7 @@ div.card.box-app {
          }
 
          .separador {
-            border-bottom: 1rem solid #eef0f8;
+            border-bottom: 1rem solid $backgroundCinza;
          }
       }
    }
@@ -283,19 +303,11 @@ div.card.box-app {
       }
    }
 
-   div.card-header.header-historico-fiduciario {
-      background-color: transparent;
-      font-size: 1.3rem;
-      margin: 0;
-      padding: 1.75rem;
-      border-bottom: 1rem solid #eef0f8;
-      margin-bottom: 1rem;
-   }
-
    div.tab-content {
       padding: 2rem;
    }
 
+   /* Ícones */
    button.btn-primary,
    button.btn-light-primary {
 
@@ -330,32 +342,21 @@ div.card.box-app {
       }
    } 
 
-}
+   a.btn-primary,
+   button.btn-primary {
+      background-color: $azulBtnPrimary;
+      border-color: $azulBtnPrimary;
 
-.collapse-partes {
-
-   button.btn-block {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
+      &:hover {
+         background-color: #2d458d;
+         border-color: #2d458d;
+      }
    }
 }
-
-/* Tabs */
-#pills-tabContent div.h-100 {
-   padding: 1.5rem 2rem 0 2rem !important;
-}
-
-/**** Estilos gerais ****/
 
 /* Botões */
 button {
    font-size: .85rem !important;
-}
-
-.btn-primary {
-   background-color: #005ca9;
-   border-color: #005ca9;
 }
 
 .container.mt-4 div div.buttons button,
@@ -363,15 +364,9 @@ button {
    font-size: .85rem;
 }
 
-table td.options a,
-table td.options div.btn-group button,
-div.row .col input {
-   font-size: .85rem;
-}
-
-/* Badges */
-table tbody tr td span.bg-primary {
-   background-color: #005ca9 !important;
+/* Tabs */
+#pills-tabContent div.h-100 {
+   padding: 1.5rem 2rem 0 2rem !important;
 }
 
 aside a {
@@ -379,7 +374,7 @@ aside a {
    text-decoration: none;
 
    &:hover {
-      color: #0d6efd !important;
+      color: $azulTimeline !important;
    }
 }
 
@@ -393,50 +388,24 @@ a:active {
    }
 }
 
-.accordion-mod {
-   border: 0;
-}
-
-.image-mod {
-   margin-top: -90px;
-}
-
-.accordion-button {
-   color: #0c63e4;
-   background-color: #fff !important;
-   border-bottom: 1px solid #0c63e4;
-}
-
 /* Formulário */
 .form-control {
    font-size: .9rem;
-}
 
-.form-control.form-control-solid {
-   background-color: #ebeff2;
-   border-color: #ebeff2;
-   color: #3f4254;
-   -webkit-transition: color .15s ease, background-color .15s ease, border-color .15s ease, -webkit-box-shadow .15s ease;
-   transition: color .15s ease, background-color .15s ease, border-color .15s ease, -webkit-box-shadow .15s ease;
-   transition: color .15s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
-   transition: color .15s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease, -webkit-box-shadow .15s ease;
+   &.form-control-solid {
+      background-color: #ebeff2;
+      border-color: #ebeff2;
+      color: #3f4254;
+      -webkit-transition: color .15s ease, background-color .15s ease, border-color .15s ease, -webkit-box-shadow .15s ease;
+      transition: color .15s ease, background-color .15s ease, border-color .15s ease, -webkit-box-shadow .15s ease;
+      transition: color .15s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
+      transition: color .15s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease, -webkit-box-shadow .15s ease;
+   }
 }
 
 .custom-control-label::before {
-   background-color: #FFFFFF;
+   background-color: $brancoPadrao;
    border: 1px solid #CCC;
-}
-
-div.header-data {
-   font-size: .8rem;
-}
-
-div.header-data .btn {
-   font-size: .8rem !important;
-}
-
-div.header-progresso {
-   font-size: .8rem;
 }
 
 /* Footer */

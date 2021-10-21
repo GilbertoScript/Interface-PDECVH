@@ -74,6 +74,16 @@ header {
          }
       }
 
+      #navbar-header .justify-content-end li a.btn-primary {
+         background-color: #005ca9;
+         border-color: #005ca9;
+
+         &:hover {
+            background-color: #2d458d;
+            border-color: #2d458d;
+         }
+      }
+
    }
 }
 

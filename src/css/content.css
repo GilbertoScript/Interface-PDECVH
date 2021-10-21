@@ -1,9 +1,12 @@
 @charset "UTF-8";
+/* Variáveis */
+/* Box principal */
 div.card.box-app {
-  background-color: #FFF;
+  background-color: #fff;
   border: none;
   border-radius: 3px;
   padding: 0;
+  /* Ícones */
 }
 div.card.box-app div.card-header {
   background-color: transparent;
@@ -13,13 +16,21 @@ div.card.box-app div.card-header {
   border: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
+div.card.box-app div.card-header.header-historico-fiduciario {
+  background-color: transparent;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 1.75rem;
+  border-bottom: 1rem solid #eef0f8;
+  margin-bottom: 1rem;
+}
 div.card.box-app div.card-header h3 {
   color: #181c32;
   font-size: 1.275rem;
   font-weight: 600;
 }
 div.card.box-app div.card-header .sub-title {
-  color: #9999a3 !important;
+  color: #9999a3;
   font-size: 1.1rem;
 }
 div.card.box-app div.card-header figure.logo {
@@ -52,6 +63,17 @@ div.card.box-app div.card-body {
 }
 div.card.box-app div.card-body div.status-card {
   border-radius: 10px;
+}
+div.card.box-app div.card-body .accordion-mod {
+  border: 0;
+}
+div.card.box-app div.card-body .image-mod {
+  margin-top: -90px;
+}
+div.card.box-app div.card-body .accordion-button {
+  color: #0c63e4;
+  background-color: #fff !important;
+  border-bottom: 1px solid #0c63e4;
 }
 div.card.box-app div.card-body .card-body-gerenciamento {
   margin-bottom: 0.5rem;
@@ -98,8 +120,15 @@ div.card.box-app div#card-body-listagem div.card-listagem:first-child > div.card
 div.card.box-app div#card-body-listagem div.card-listagem {
   border-bottom: 1rem solid #eef0f8;
 }
+div.card.box-app div#card-body-listagem div.card-listagem div.header-data {
+  font-size: 0.8rem;
+}
+div.card.box-app div#card-body-listagem div.card-listagem div.header-data .btn {
+  font-size: 0.8rem !important;
+}
 div.card.box-app div#card-body-listagem div.card-listagem .container {
   margin-left: -29.5%;
+  /* Timleline dentro de detalhes da solicitação */
 }
 div.card.box-app div#card-body-listagem div.card-listagem .container .timeline {
   padding: 50px 0;
@@ -130,9 +159,6 @@ div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .
 }
 div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content h6, div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content p {
   padding: 5px 15px;
-}
-div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content p, div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content time {
-  color: #0d6efd;
 }
 div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes .timeline-content h6 {
   padding: 13px;
@@ -167,23 +193,10 @@ div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .
 div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(even) {
   flex-direction: row-reverse;
 }
-div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(even) .timeline-date {
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(odd) .timeline-date, div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(even) .timeline-date {
   text-align: right;
 }
-div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(even) .timeline-content::after {
-  content: "";
-  position: absolute;
-  top: 5%;
-  right: 100%;
-  width: 0;
-  border-right: 10px solid #e1e9ff;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-}
-div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(odd) .timeline-date {
-  text-align: right;
-}
-div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(odd) .timeline-content::after {
+div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(odd) .timeline-content::after, div.card.box-app div#card-body-listagem div.card-listagem .container .timeline .timeline-nodes:nth-child(even) .timeline-content::after {
   content: "";
   position: absolute;
   top: 5%;
@@ -219,14 +232,6 @@ div.card.box-app ul.nav li.nav-item > a {
 div.card.box-app ul.nav li.nav-item > a.active, div.card.box-app ul.nav li.nav-item > a:hover, div.card.box-app ul.nav li.nav-item > a:focus {
   color: #004d7c;
   border-bottom: 3px solid #004d7c;
-}
-div.card.box-app div.card-header.header-historico-fiduciario {
-  background-color: transparent;
-  font-size: 1.3rem;
-  margin: 0;
-  padding: 1.75rem;
-  border-bottom: 1rem solid #eef0f8;
-  margin-bottom: 1rem;
 }
 div.card.box-app div.tab-content {
   padding: 2rem;
@@ -266,27 +271,20 @@ div.card.box-app button.btn-light-primary i.fi-rr-disk:before {
   right: 100%;
   left: 85.5%;
 }
-
-.collapse-partes button.btn-block {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+div.card.box-app a.btn-primary,
+div.card.box-app button.btn-primary {
+  background-color: #005ca9;
+  border-color: #005ca9;
+}
+div.card.box-app a.btn-primary:hover,
+div.card.box-app button.btn-primary:hover {
+  background-color: #2d458d;
+  border-color: #2d458d;
 }
 
-/* Tabs */
-#pills-tabContent div.h-100 {
-  padding: 1.5rem 2rem 0 2rem !important;
-}
-
-/**** Estilos gerais ****/
 /* Botões */
 button {
   font-size: 0.85rem !important;
-}
-
-.btn-primary {
-  background-color: #005ca9;
-  border-color: #005ca9;
 }
 
 .container.mt-4 div div.buttons button,
@@ -294,15 +292,9 @@ button {
   font-size: 0.85rem;
 }
 
-table td.options a,
-table td.options div.btn-group button,
-div.row .col input {
-  font-size: 0.85rem;
-}
-
-/* Badges */
-table tbody tr td span.bg-primary {
-  background-color: #005ca9 !important;
+/* Tabs */
+#pills-tabContent div.h-100 {
+  padding: 1.5rem 2rem 0 2rem !important;
 }
 
 aside a {
@@ -323,25 +315,10 @@ a:active:hover {
   color: white !important;
 }
 
-.accordion-mod {
-  border: 0;
-}
-
-.image-mod {
-  margin-top: -90px;
-}
-
-.accordion-button {
-  color: #0c63e4;
-  background-color: #fff !important;
-  border-bottom: 1px solid #0c63e4;
-}
-
 /* Formulário */
 .form-control {
   font-size: 0.9rem;
 }
-
 .form-control.form-control-solid {
   background-color: #ebeff2;
   border-color: #ebeff2;
@@ -353,20 +330,8 @@ a:active:hover {
 }
 
 .custom-control-label::before {
-  background-color: #FFFFFF;
+  background-color: #fff;
   border: 1px solid #CCC;
-}
-
-div.header-data {
-  font-size: 0.8rem;
-}
-
-div.header-data .btn {
-  font-size: 0.8rem !important;
-}
-
-div.header-progresso {
-  font-size: 0.8rem;
 }
 
 /* Footer */

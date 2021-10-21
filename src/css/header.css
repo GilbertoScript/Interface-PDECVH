@@ -57,6 +57,14 @@ header nav.navbar div.user button > span.initial {
   line-height: 35px;
   width: 35px;
 }
+header nav.navbar #navbar-header .justify-content-end li a.btn-primary {
+  background-color: #005ca9;
+  border-color: #005ca9;
+}
+header nav.navbar #navbar-header .justify-content-end li a.btn-primary:hover {
+  background-color: #2d458d;
+  border-color: #2d458d;
+}
 
 /* Subheader */
 div#sub-header {
