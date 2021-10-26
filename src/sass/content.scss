@@ -51,9 +51,9 @@ div.card.box-app {
          width: 125px;
       }
 
-      .collapse-partes.d-flex,
       span,
-      span small {
+      span small, 
+      .collapse-partes.d-flex {
          font-size: 0.90rem;
       }
 
@@ -146,6 +146,21 @@ div.card.box-app {
             }
          }
       } 
+
+      /* Formulário */
+      .form-control {
+         font-size: .9rem;
+
+         &.form-control-solid {
+            background-color: #ebeff2;
+            border-color: #ebeff2;
+            color: #3f4254;
+            -webkit-transition: color .15s ease, background-color .15s ease, border-color .15s ease, -webkit-box-shadow .15s ease;
+            transition: color .15s ease, background-color .15s ease, border-color .15s ease, -webkit-box-shadow .15s ease;
+            transition: color .15s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
+            transition: color .15s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease, -webkit-box-shadow .15s ease;
+         }
+      }
    }
 
    div#card-body-listagem {
@@ -386,26 +401,6 @@ a:active {
    &:hover {
       color: white !important;
    }
-}
-
-/* Formulário */
-.form-control {
-   font-size: .9rem;
-
-   &.form-control-solid {
-      background-color: #ebeff2;
-      border-color: #ebeff2;
-      color: #3f4254;
-      -webkit-transition: color .15s ease, background-color .15s ease, border-color .15s ease, -webkit-box-shadow .15s ease;
-      transition: color .15s ease, background-color .15s ease, border-color .15s ease, -webkit-box-shadow .15s ease;
-      transition: color .15s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
-      transition: color .15s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease, -webkit-box-shadow .15s ease;
-   }
-}
-
-.custom-control-label::before {
-   background-color: $brancoPadrao;
-   border: 1px solid #CCC;
 }
 
 /* Footer */

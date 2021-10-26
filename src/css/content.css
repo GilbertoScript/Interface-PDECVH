@@ -40,9 +40,9 @@ div.card.box-app div.card-header figure.logo {
   padding: 10px;
   width: 125px;
 }
-div.card.box-app div.card-header .collapse-partes.d-flex,
 div.card.box-app div.card-header span,
-div.card.box-app div.card-header span small {
+div.card.box-app div.card-header span small,
+div.card.box-app div.card-header .collapse-partes.d-flex {
   font-size: 0.9rem;
 }
 div.card.box-app div.card-header div.card-subtitle {
@@ -60,6 +60,7 @@ div.card.box-app div.card-header .collapse-partes.d-flex a:nth-child(n+5) {
 div.card.box-app div.card-body {
   padding: 1rem 2rem;
   /* Wizard */
+  /* Formulário */
 }
 div.card.box-app div.card-body div.status-card {
   border-radius: 10px;
@@ -110,6 +111,18 @@ div.card.box-app div.card-body .wizard .wizard-item.active {
 }
 div.card.box-app div.card-body .wizard .wizard-item.active::after {
   background-color: #2881b9;
+}
+div.card.box-app div.card-body .form-control {
+  font-size: 0.9rem;
+}
+div.card.box-app div.card-body .form-control.form-control-solid {
+  background-color: #ebeff2;
+  border-color: #ebeff2;
+  color: #3f4254;
+  -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
 }
 div.card.box-app div#card-body-listagem {
   padding: 0;
@@ -313,25 +326,6 @@ a:active {
 .nav-item .active:hover,
 a:active:hover {
   color: white !important;
-}
-
-/* Formulário */
-.form-control {
-  font-size: 0.9rem;
-}
-.form-control.form-control-solid {
-  background-color: #ebeff2;
-  border-color: #ebeff2;
-  color: #3f4254;
-  -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
-  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
-  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
-}
-
-.custom-control-label::before {
-  background-color: #fff;
-  border: 1px solid #CCC;
 }
 
 /* Footer */
